@@ -14,5 +14,20 @@
 @import url(../blocks/logo/logo.css);
 @import url(../blocks/logo/_place/logo_place_header.css);
 
+/* стили start-screen */
+@import url(../blocks/start-screen/start-screen.css);
+@import url(../blocks/start-screen/__title/start-screen__title.css);
+@import url(../blocks/start-screen/__subtitle/start-screen__subtitle.css);
+
+/* стили numbers */
+@import url(../blocks/numbers/numbers.css);
+@import url(../blocks/numbers/__item/numbers__item.css);
+@import url(../blocks/numbers/__title/numbers__title.css);
+@import url(../blocks/numbers/__subtitle/numbers__subtitle.css);
+
+/* стили конопок */
+@import url(../blocks/button/button.css);
+@import url(../blocks/button/_place/button_place_start-screen.css);
+
 
 @import url(../blocks/footer/footer.css);
