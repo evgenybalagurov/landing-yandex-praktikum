@@ -5,4 +5,12 @@
 
 @import url(../blocks/header/header.css);
 
+@import url(../blocks/tasks/tasks.css);
+@import url(../blocks/tasks/__items/tasts__items.css);
+
+@import url(../blocks/task/task.css);
+@import url(../blocks/task/__title/task__title.css);
+@import url(../blocks/task/__text/task__text.css);
+@import url(../blocks/task/__link/task__link.css);
+
 @import url(../blocks/footer/footer.css);

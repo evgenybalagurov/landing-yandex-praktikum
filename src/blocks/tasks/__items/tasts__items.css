@@ -1,0 +1,5 @@
+.tasks__items {
+  display: flex;
+  justify-content: space-between;
+  gap: 29px;
+}

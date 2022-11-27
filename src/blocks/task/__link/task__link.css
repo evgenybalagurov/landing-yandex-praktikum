@@ -1,0 +1,13 @@
+.task__link {
+  width: 100%;
+  margin-top: 30px;
+  padding: 16px;
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  background-color: #acacac;
+  font-size: 22px;
+  line-height: 1.23;
+  color: #000;
+  text-decoration: none;
+}
