@@ -29,5 +29,17 @@
 @import url(../blocks/button/button.css);
 @import url(../blocks/button/_place/button_place_start-screen.css);
 
+/* стили заголовков */
+@import url(../blocks/title/title.css);
+
+/* стили advantages */
+@import url(../blocks/advantages/advantages.css);
+@import url(../blocks/advantages/__items/advantages__items.css);
+@import url(../blocks/advantages/__icon/advantages__icon.css);
+@import url(../blocks/advantages/__title/advantages__title.css);
+@import url(../blocks/advantages/__container/advantages__container.css);
+@import url(../blocks/advantages/__text/advantages__text.css);
+@import url(../blocks/advantages/__item/advantages__item.css);
+
 
 @import url(../blocks/footer/footer.css);
