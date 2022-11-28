@@ -1,3 +1,6 @@
 .tasks {
-  padding: 60px 165px;
+  width: 100%;
+  max-width: 1110px;
+  margin: 0 auto;
+  padding: 60px 0;
 }

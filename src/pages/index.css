@@ -5,12 +5,18 @@
 
 @import url(../blocks/header/header.css);
 
+/* стили ссылок */
+@import url(../blocks/link/link.css);
+
+/* стили tasks */
 @import url(../blocks/tasks/tasks.css);
 @import url(../blocks/tasks/__items/tasts__items.css);
-
-@import url(../blocks/task/task.css);
-@import url(../blocks/task/__title/task__title.css);
-@import url(../blocks/task/__text/task__text.css);
-@import url(../blocks/task/__link/task__link.css);
+@import url(../blocks/tasks/__item/tasks__item.css);
+@import url(../blocks/tasks/__title/tasks__title.css);
+@import url(../blocks/tasks/__text/tasks__text.css);
+@import url(../blocks/tasks/__text-items/tasks__text-items.css);
+@import url(../blocks/tasks/__text-item/tasks__text-item.css);
+@import url(../blocks/tasks/__container/tasks__container.css);
+@import url(../blocks/tasks/__link/tasks__link.css);
 
 @import url(../blocks/footer/footer.css);

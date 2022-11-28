@@ -1,4 +1,4 @@
-.task__link {
+.tasks__link {
   width: 100%;
   margin-top: 30px;
   padding: 16px;
@@ -8,6 +8,12 @@
   background-color: #acacac;
   font-size: 22px;
   line-height: 1.23;
-  color: #000;
-  text-decoration: none;
+}
+
+.tasks__link:hover {
+  opacity: .8;
+}
+
+.tasks__link:active {
+  scale: 1.03;
 }

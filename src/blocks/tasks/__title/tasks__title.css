@@ -1,5 +1,6 @@
-.task__title {
+.tasks__title {
   margin: 0 0 24px;
+  font-weight: 400;
   font-size: 32px;
   line-height: 1.22;
 }
