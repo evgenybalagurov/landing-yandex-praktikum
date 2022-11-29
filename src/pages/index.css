@@ -57,4 +57,16 @@
 @import url(../blocks/advantages/__text/advantages__text.css);
 @import url(../blocks/advantages/__item/advantages__item.css);
 
+/* стили vacancy */
+@import url(../blocks/vacancy/vacancy.css);
+@import url(../blocks/vacancy/__tabs/vacancy__tabs.css);
+@import url(../blocks/vacancy/__head/vacancy__head.css);
+@import url(../blocks/vacancy/__tab-button/vacancy__tab-button.css);
+@import url(../blocks/vacancy/__tab-button/_active/vacancy__tab-button_active.css);
+@import url(../blocks/vacancy/__content/vacancy__content.css);
+@import url(../blocks/vacancy/__content/_active/vacancy__content_active.css);
+
+/* стили табов */
+
+
 @import url(../blocks/footer/footer.css);

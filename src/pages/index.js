@@ -2,6 +2,7 @@ import "./index.css";
 
 import Advantage from "../components/Advantage.js";
 import Section from "../components/Section.js";
+import Tabs from "../components/Tabs.js";
 
 import {
   advantageArray,
@@ -27,3 +28,12 @@ const getAdvantage = (item) => {
 };
 
 advantagesList.renderItems(advantageArray);
+
+new Tabs({
+  tabsSelector: ".vacancy__tabs",
+  tabsHeadSelector: ".vacancy__head",
+  tabsBodySelector: ".vacancy__body",
+  tabsCaptionSelector: ".vacancy__tab-button",
+  tabsCaptionActiveClass: "vacancy__tab-button_active",
+  tabsContentActiveClass: "vacancy__content_active",
+}).init();
