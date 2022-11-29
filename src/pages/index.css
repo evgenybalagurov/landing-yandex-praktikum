@@ -35,9 +35,15 @@
 
 /* блок programs*/
 @import url(../blocks/programs/programs.css);
+@import url(../blocks/programs/__container/programs__container.css);
+@import url(../blocks/programs/__item/programs__item.css);
 
 /* блок эксперт  (how-to)*/
 @import url(../blocks/expert/expert.css);
+@import url(../blocks/expert/__items/expert__items.css);
+@import url(../blocks/expert/__item/expert__item.css);
+@import url(../blocks/expert/__item-header/expert__item-header.css);
+@import url(../blocks/expert/__item-text/expert__item-text.css);
 
 /* стили заголовков */
 @import url(../blocks/title/title.css);
