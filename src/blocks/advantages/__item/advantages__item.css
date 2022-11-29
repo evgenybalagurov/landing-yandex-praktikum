@@ -1,0 +1,6 @@
+.advantages__item {
+  min-height: 156px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
