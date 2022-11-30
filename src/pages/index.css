@@ -13,6 +13,7 @@
 /* стили логитипа */
 @import url(../blocks/logo/logo.css);
 @import url(../blocks/logo/_place/logo_place_header.css);
+@import url(../blocks/logo/_place/logo_place_footer.css);
 
 /* стили start-screen */
 @import url(../blocks/start-screen/start-screen.css);
@@ -37,3 +38,6 @@
 
 /* блок эксперт  (how-to)*/
 @import url(../blocks/expert/expert.css);
+
+/* Footer */
+@import url(../blocks/footer/footer.css);
