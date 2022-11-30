@@ -77,5 +77,16 @@
 @import url(../blocks/advantages/__text/advantages__text.css);
 @import url(../blocks/advantages/__item/advantages__item.css);
 
+/* стили faq */
+@import url(../blocks/faq/faq.css);
+@import url(../blocks/faq/__list/faq__list.css);
+@import url(../blocks/faq/__item/faq__item.css);
+@import url(../blocks/faq/__accordion/faq__accordion.css);
+@import url(../blocks/faq/__accordion-text/faq__accordion-text.css);
+@import url(../blocks/faq/__panel/faq__panel.css);
+@import url(../blocks/faq/__panel-text/faq__panel-text.css);
+@import url(../blocks/faq/__vector/faq__vector.css);
+@import url(../blocks/faq/__vector/_active/faq__vector_active.css);
+
 /* FOOTER */
 @import url(../blocks/footer/footer.css);
