@@ -14,22 +14,16 @@
 }
 
 .programs__container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 250px;
-  gap: 30px;
-}
-
-.programs__container:nth-child(3) {
-  grid-template-columns: repeat(3, 1fr);
-  margin-top: 36px;
+  display: flex;
+  flex-wrap: wrap
 }
 
 .programs__item {
   height: 250px;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
   font-family: Inter;
   font-size: 20px;
   font-weight: 700;
@@ -37,5 +31,47 @@
   letter-spacing: 0em;
   margin: 0px;
   padding: 0px;
+  border-radius: 30px;
   background-color: #d9d9d9;
+  background-repeat: no-repeat;
+}
+
+.programs__item:nth-child(1) {
+  background-image: url(../../images/program.svg);
+  background-position: right 68px bottom 18px;
+  width: 635px;
+  margin: 0 30px 30px 0;
+}
+
+.programs__item:nth-child(2) {
+  background-image: url(../../images/data_analitic.svg);
+  background-position: right 30px bottom 18px;
+  width: 445px;
+  margin-bottom: 30px;
+}
+
+.programs__item:nth-child(3) {
+  background-image: url(../../images/marketing.svg);
+  background-position: right 12px bottom 0px;
+  background-size: 204px 164px ;
+  width: 445px;
+  margin: 0 30px 30px 0;
+}
+
+.programs__item:nth-child(4) {
+  background-image: url(../../images/management.svg);
+  background-position: right 30px bottom 18px;
+  width: 635px;
+  margin-bottom: 30px;
+}
+
+.programs__item:nth-child(5) {
+  background-image: url(../../images/design.svg);
+  background-position: right 307px bottom 18px;
+  width: 1110px;
+}
+
+
+.programs__item_container{
+  padding: 30px 0 0 30px;
 }
