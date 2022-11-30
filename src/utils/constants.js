@@ -1,5 +1,38 @@
 import icon from "../images/advantages/icon.svg";
 
+const vacancyArray = [
+  {
+    tabContent: "mentor-programming",
+    title: "Мидл<br/> фронтенд-разработчик",
+    price: "35 000 руб",
+  },
+  {
+    tabContent: "mentor-programming",
+    title: "Мидл<br/> фронтенд-разработчик",
+    price: "35 000 руб",
+  },
+  {
+    tabContent: "mentor-programming",
+    title: "Мидл<br/> фронтенд-разработчик",
+    price: "35 000 руб",
+  },
+  {
+    tabContent: "mentor-programming",
+    title: "Мидл<br/> фронтенд-разработчик",
+    price: "35 000 руб",
+  },
+  {
+    tabContent: "mentor-programming",
+    title: "Мидл<br/> фронтенд-разработчик",
+    price: "35 000 руб",
+  },
+  {
+    tabContent: "mentor-management",
+    title: "Мидл<br/> фронтенд-разработчик",
+    price: "40 000 руб",
+  },
+];
+
 const advantageArray = [
   {
     icon,
@@ -35,5 +68,12 @@ const advantageArray = [
 
 const advantageListSection = ".advantages__items";
 const templateAdvantageSelector = ".template-advantage";
+const templateVacancySelector = ".template-vacancy";
 
-export { advantageArray, advantageListSection, templateAdvantageSelector };
+export {
+  vacancyArray,
+  advantageArray,
+  advantageListSection,
+  templateAdvantageSelector,
+  templateVacancySelector,
+};

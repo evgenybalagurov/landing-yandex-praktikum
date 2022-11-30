@@ -132,37 +132,37 @@
             <div class="mentor tabs">
               <ul class="mentor__head tabs__head">
                 <li>
-                  <button class="mentor__tab-button tabs__tab-button" data-tab="programming">Программирование</button>
+                  <button class="mentor__tab-button tabs__tab-button" data-tab="mentor-programming">Программирование</button>
                 </li>
                 <li>
-                  <button class="mentor__tab-button tabs__tab-button" data-tab="analytics">Аналитика</button>
+                  <button class="mentor__tab-button tabs__tab-button" data-tab="mentor-analytics">Аналитика</button>
                 </li>
                 <li>
-                  <button class="mentor__tab-button tabs__tab-button" data-tab="design">Дизайн</button>
+                  <button class="mentor__tab-button tabs__tab-button" data-tab="mentor-design">Дизайн</button>
                 </li>
                 <li>
-                  <button class="mentor__tab-button tabs__tab-button" data-tab="marketing">Маркетинг</button>
+                  <button class="mentor__tab-button tabs__tab-button" data-tab="mentor-marketing">Маркетинг</button>
                 </li>
                 <li>
-                  <button class="mentor__tab-button tabs__tab-button" data-tab="management">Менеджмент</button>
+                  <button class="mentor__tab-button tabs__tab-button" data-tab="mentor-management">Менеджмент</button>
                 </li>
               </ul>
               <div class="mentor__body tabs__body">
-                <div class="mentor__content tabs__content" data-tab="programming">
-                  <p>programming</p>
-                </div>
-                <div class="mentor__content tabs__content" data-tab="analytics">
-                  <p>analytics</p>
-                </div>
-                <div class="mentor__content tabs__content" data-tab="design">
-                  <p>design</p>
-                </div>
-                <div class="mentor__content tabs__content" data-tab="marketing">
-                  <p>marketing</p>
-                </div>
-                <div class="mentor__content tabs__content" data-tab="management">
-                  <p>Management</p>
-                </div>
+                <ul class="mentor__content tabs__content" data-tab="mentor-programming" data-content="mentor-programming">
+
+                </ul>
+                <ul class="mentor__content tabs__content" data-tab="mentor-analytics" data-content="mentor-analytics">
+
+                </ul>
+                <ul class="mentor__content tabs__content" data-tab="mentor-design" data-content="mentor-design">
+
+                </ul>
+                <ul class="mentor__content tabs__content" data-tab="mentor-marketing" data-content="mentor-marketing">
+
+                </ul>
+                <ul class="mentor__content tabs__content" data-tab="mentor-management" data-content="mentor-management">
+
+                </ul>
               </div>
             </div>
           </div>
@@ -170,36 +170,36 @@
             <div class="reviewer tabs">
               <ul class="reviewer__head tabs__head">
                 <li>
-                  <button class="reviewer__tab-button tabs__tab-button" data-tab="programming">Программирование</button>
+                  <button class="reviewer__tab-button tabs__tab-button" data-tab="reviewer-programming">Программирование</button>
                 </li>
                 <li>
-                  <button class="reviewer__tab-button tabs__tab-button" data-tab="analytics">Аналитика</button>
+                  <button class="reviewer__tab-button tabs__tab-button" data-tab="reviewer-analytics">Аналитика</button>
                 </li>
                 <li>
-                  <button class="reviewer__tab-button tabs__tab-button" data-tab="design">Дизайн</button>
+                  <button class="reviewer__tab-button tabs__tab-button" data-tab="reviewer-design">Дизайн</button>
                 </li>
                 <li>
-                  <button class="reviewer__tab-button tabs__tab-button" data-tab="marketing">Маркетинг</button>
+                  <button class="reviewer__tab-button tabs__tab-button" data-tab="reviewer-marketing">Маркетинг</button>
                 </li>
                 <li>
-                  <button class="reviewer__tab-button tabs__tab-button" data-tab="management">Менеджмент</button>
+                  <button class="reviewer__tab-button tabs__tab-button" data-tab="reviewer-management">Менеджмент</button>
                 </li>
               </ul>
               <div class="reviewer__body tabs__body">
-                <div class="reviewer__content tabs__content" data-tab="programming">
-                  <p>programming reviewer</p>
+                <ul class="reviewer__content tabs__content" data-tab="reviewer-programming" data-content="reviewer-programming">
+
+                </ul>
+                <ul class="reviewer__content tabs__content" data-tab="reviewer-analytics" data-content="reviewer-analytics">
+
+                </ul>
+                <div class="reviewer__content tabs__content" data-tab="reviewer-design" data-content="reviewer-design">
+
                 </div>
-                <div class="reviewer__content tabs__content" data-tab="analytics">
-                  <p>analytics</p>
+                <div class="reviewer__content tabs__content" data-tab="reviewer-marketing" data-content="reviewer-marketing">
+
                 </div>
-                <div class="reviewer__content tabs__content" data-tab="design">
-                  <p>design</p>
-                </div>
-                <div class="reviewer__content tabs__content" data-tab="marketing">
-                  <p>marketing</p>
-                </div>
-                <div class="reviewer__content tabs__content" data-tab="management">
-                  <p>Management</p>
+                <div class="reviewer__content tabs__content" data-tab="reviewer-management" data-content="reviewer-management">
+
                 </div>
               </div>
             </div>
@@ -221,6 +221,14 @@
         <h3 class="advantages__title"></h3>
         <p class="advantages__text"></p>
       </div>
+    </li>
+  </template>
+
+  <template class="template-vacancy">
+    <li class="vacancy-card">
+      <h3 class="vacancy-card__title"></h3>
+      <span class="vacancy-card__price"></span>
+      <button class="button button_place_vacancy-card">Кнопка</button>
     </li>
   </template>
 

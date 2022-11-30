@@ -1,0 +1,11 @@
+.vacancy-card {
+  width: 100%;
+  min-height: 330px;
+  padding: 40px 40px 60px;
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  grid-template-rows: 1fr 60px;
+  gap: 40px;
+  box-sizing: border-box;
+  border-bottom: 2px solid #C5C5C5;
+}

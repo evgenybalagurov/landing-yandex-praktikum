@@ -1,11 +1,12 @@
 class Tabs {
-  constructor(config) {
+  constructor(config, rendererContent) {
     this.tabs = config.tabsSelector;
     this.head = config.tabsHeadSelector;
     this.body = config.tabsBodySelector;
     this.caption = config.tabsCaptionSelector;
     this.captionActiveClass = config.tabsCaptionActiveClass;
     this.contentActiveClass = config.tabsContentActiveClass;
+    this.rendererContent = rendererContent;
   }
 
   getActiveTabName(head) {
@@ -46,6 +47,10 @@ class Tabs {
       caption.classList.add(this.captionActiveClass);
 
       this.setActiveContent(head, body);
+
+      if (this.rendererContent) {
+        this.rendererContent(this.getActiveTabName(head));
+      }
     });
   }
 
