@@ -37,3 +37,21 @@ new Tabs({
   tabsCaptionActiveClass: "vacancy__tab-button_active",
   tabsContentActiveClass: "vacancy__content_active",
 }).init();
+
+new Tabs({
+  tabsSelector: ".mentor",
+  tabsHeadSelector: ".mentor__head",
+  tabsBodySelector: ".mentor__body",
+  tabsCaptionSelector: ".mentor__tab-button",
+  tabsCaptionActiveClass: "tabs__tab-button_active",
+  tabsContentActiveClass: "tabs__content_active",
+}).init();
+
+new Tabs({
+  tabsSelector: ".reviewer",
+  tabsHeadSelector: ".reviewer__head",
+  tabsBodySelector: ".reviewer__body",
+  tabsCaptionSelector: ".reviewer__tab-button",
+  tabsCaptionActiveClass: "tabs__tab-button_active",
+  tabsContentActiveClass: "tabs__content_active",
+}).init();

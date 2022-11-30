@@ -57,6 +57,14 @@
 @import url(../blocks/advantages/__text/advantages__text.css);
 @import url(../blocks/advantages/__item/advantages__item.css);
 
+/* стили mentor */
+@import url(../blocks/tabs/tabs.css);
+@import url(../blocks/tabs/__head/tabs__head.css);
+@import url(../blocks/tabs/__tab-button/tabs__tab-button.css);
+@import url(../blocks/tabs/__tab-button/_active/tabs__tab-button_active.css);
+@import url(../blocks/tabs/__content/tabs__content.css);
+@import url(../blocks/tabs/__content/_active/tabs__content_active.css);
+
 /* стили vacancy */
 @import url(../blocks/vacancy/vacancy.css);
 @import url(../blocks/vacancy/__tabs/vacancy__tabs.css);
