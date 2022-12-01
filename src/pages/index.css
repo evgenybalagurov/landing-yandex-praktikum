@@ -21,6 +21,7 @@
 @import url(../blocks/start-screen/start-screen.css);
 @import url(../blocks/start-screen/__title/start-screen__title.css);
 @import url(../blocks/start-screen/__subtitle/start-screen__subtitle.css);
+@import url(../blocks/start-screen/__main-info/start-screen__main-info.css);
 
 /* стили numbers */
 @import url(../blocks/numbers/numbers.css);
