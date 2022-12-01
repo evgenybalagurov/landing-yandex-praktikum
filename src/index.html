@@ -227,9 +227,18 @@
 
   <template class="template-vacancy">
     <li class="vacancy-card">
-      <h3 class="vacancy-card__title"></h3>
+      <div class="vacancy-card__container">
+        <h3 class="vacancy-card__title"></h3>
+        <button class="button button_place_vacancy-card">Откликнуться</button>
+      </div>
+      <div class="vacancy-card__desc">
+        <p class="vacancy-card__desc-text">Опыт программистом более трёх лет</p>
+        <p class="vacancy-card__desc-text">Знание HTML, CSS</p>
+        <p class="vacancy-card__desc-text">Работали с JavaScript, React, TypeScript, Node.js</p>
+        <p class="vacancy-card__desc-text">Готовы посвящать проекту от 8 до 12 часов в неделю</p>
+      </div>
       <span class="vacancy-card__price"></span>
-      <button class="button button_place_vacancy-card">Кнопка</button>
+
     </li>
   </template>
 

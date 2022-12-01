@@ -80,5 +80,8 @@
 @import url(../blocks/vacancy-card/vacancy-card.css);
 @import url(../blocks/vacancy-card/__title/vacancy-card__title.css);
 @import url(../blocks/vacancy-card/__price/vacancy-card__price.css);
+@import url(../blocks/vacancy-card/__container/vacancy-card__container.css);
+@import url(../blocks/vacancy-card/__desc/vacancy-card__desc.css);
+@import url(../blocks/vacancy-card/__desc-text/vacancy-card__desc-text.css);
 
 @import url(../blocks/footer/footer.css);

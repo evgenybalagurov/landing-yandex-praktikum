@@ -15,7 +15,7 @@ class Vacancy {
   getCardElement() {
     this._getTemplate();
 
-    this._cardElement.querySelector(".vacancy-card__title").textContent =
+    this._cardElement.querySelector(".vacancy-card__title").innerText =
       this._title;
     this._cardElement.querySelector(".vacancy-card__price").textContent =
       this._price;

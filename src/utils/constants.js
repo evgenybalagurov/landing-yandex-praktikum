@@ -3,32 +3,38 @@ import icon from "../images/advantages/icon.svg";
 const vacancyArray = [
   {
     tabContent: "mentor-programming",
-    title: "Мидл<br/> фронтенд-разработчик",
+    title: `Мидл
+      фронтенд-разработчик`,
     price: "35 000 руб",
   },
   {
     tabContent: "reviewer-programming",
-    title: "Мидл<br/> фронтенд-разработчик",
+    title: `Мидл
+      фронтенд-разработчик`,
+    price: "35 000 руб",
+  },
+  {
+    tabContent: "reviewer-marketing",
+    title: `Мидл
+      фронтенд-разработчик`,
     price: "35 000 руб",
   },
   {
     tabContent: "mentor-programming",
-    title: "Мидл<br/> фронтенд-разработчик",
+    title: `Мидл
+      фронтенд-разработчик`,
     price: "35 000 руб",
   },
   {
     tabContent: "mentor-programming",
-    title: "Мидл<br/> фронтенд-разработчик",
+    title: `Мидл
+      фронтенд-разработчик`,
     price: "35 000 руб",
   },
   {
-    tabContent: "mentor-programming",
-    title: "Мидл<br/> фронтенд-разработчик",
-    price: "35 000 руб",
-  },
-  {
-    tabContent: "mentor-management",
-    title: "Мидл<br/> фронтенд-разработчик",
+    tabContent: "reviewer-marketing",
+    title: `Мидл
+      фронтенд-разработчик`,
     price: "40 000 руб",
   },
 ];
