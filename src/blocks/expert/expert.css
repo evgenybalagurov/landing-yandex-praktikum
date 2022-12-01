@@ -1,0 +1,30 @@
+.expert {
+  margin: 100px auto 0;
+  max-width: 1110px;
+  width: 100%;
+  position: relative;
+  background-image: url(../../images/arrow2.svg);
+  background-repeat: no-repeat;
+  background-position: left 651px bottom 30px;
+}
+
+.expert:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 96px;
+  left: 195px;
+  z-index: 0;
+  background: url(../../images/arrow1.svg) no-repeat;
+  /* background-size: 316px 108px; */
+  transform: rotate(358deg);
+}
+  
+  
+  
+ 
+  
+  
+  
+  

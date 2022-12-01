@@ -1,0 +1,10 @@
+.expert__item {
+  display: flex;
+  width: 350px;
+  height: 150px;
+  align-items: center;
+  margin: 0 0 50px 0;
+  padding: 0;
+  background: rgba(0,0,0,0);
+  justify-content: space-around;
+}
