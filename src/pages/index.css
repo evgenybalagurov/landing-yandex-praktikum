@@ -31,6 +31,7 @@
 /* стили конопок */
 @import url(../blocks/button/button.css);
 @import url(../blocks/button/_place/button_place_start-screen.css);
+@import url(../blocks/button/_place/button_place_roles.css);
 
 @import url(../blocks/footer/footer.css);
 
@@ -58,15 +59,14 @@
 @import url(../blocks/start-screen/__subtitle/start-screen__subtitle.css);
 
 /* стили tasks */
-@import url(../blocks/tasks/tasks.css);
-@import url(../blocks/tasks/__items/tasts__items.css);
-@import url(../blocks/tasks/__item/tasks__item.css);
-@import url(../blocks/tasks/__title/tasks__title.css);
-@import url(../blocks/tasks/__text/tasks__text.css);
-@import url(../blocks/tasks/__text-items/tasks__text-items.css);
-@import url(../blocks/tasks/__text-item/tasks__text-item.css);
-@import url(../blocks/tasks/__container/tasks__container.css);
-@import url(../blocks/tasks/__link/tasks__link.css);
+@import url(../blocks/roles/roles.css);
+@import url(../blocks/roles/__items/roles__items.css);
+@import url(../blocks/roles/__item/roles__item.css);
+@import url(../blocks/roles/__title/roles__title.css);
+@import url(../blocks/roles/__text/roles__text.css);
+@import url(../blocks/roles/__text-items/roles__text-items.css);
+@import url(../blocks/roles/__text-item/roles__text-item.css);
+@import url(../blocks/roles/__container/roles__container.css);
 
 /* стили advantages */
 @import url(../blocks/advantages/advantages.css);
