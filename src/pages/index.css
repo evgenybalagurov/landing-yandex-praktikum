@@ -31,6 +31,7 @@
 /* стили конопок */
 @import url(../blocks/button/button.css);
 @import url(../blocks/button/_place/button_place_start-screen.css);
+@import url(../blocks/button/_place/button_place_form-tel.css);
 
 @import url(../blocks/footer/footer.css);
 
@@ -87,6 +88,14 @@
 @import url(../blocks/faq/__panel-text/faq__panel-text.css);
 @import url(../blocks/faq/__vector/faq__vector.css);
 @import url(../blocks/faq/__vector/_active/faq__vector_active.css);
+
+/* стили form-tel */
+@import url(../blocks/form-tel/form-tel.css);
+@import url(../blocks/form-tel/__text/form-tel__text.css);
+@import url(../blocks/form-tel/__title/form-tel__title.css);
+@import url(../blocks/form-tel/__subtitle/form-tel__subtitle.css);
+@import url(../blocks/form-tel/__input/form-tel__input.css);
+@import url(../blocks/form-tel/__text-error/form-tel__text-error.css);
 
 /* FOOTER */
 @import url(../blocks/footer/footer.css);

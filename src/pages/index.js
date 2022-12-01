@@ -51,18 +51,3 @@ const getFaq = (item) => {
 };
 
 faqItems.renderItems(faqArray)
-
-// открытие акардиона
-// const faqAccordionArray = Array.from(faqAccordion)
-
-// for (let i = 0; i < faqAccordionArray.length; i++) {
-//   faqAccordionArray[i].addEventListener("click", function() {
-//     this.querySelector(".faq__vector").classList.toggle("faq__vector_active")
-//     const panel = this.nextElementSibling;
-//     if (panel.style.maxHeight) {
-//       panel.style.maxHeight = null;
-//     } else {
-//       panel.style.maxHeight = panel.scrollHeight + "px";
-//     }
-//   });
-// }
