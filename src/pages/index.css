@@ -38,15 +38,20 @@
 
 /* блок programs*/
 @import url(../blocks/programs/programs.css);
+@import url(../blocks/programs/__title/programs__title.css);
 @import url(../blocks/programs/__container/programs__container.css);
 @import url(../blocks/programs/__item/programs__item.css);
+@import url(../blocks/programs/__item/_container/programs__item_container.css);
+@import url(../blocks/programs/__item/_header/programs__item_header.css);
+@import url(../blocks/programs/__item/_text/programs__item_text.css);
 
 /* блок эксперт  (how-to)*/
 @import url(../blocks/expert/expert.css);
-@import url(../blocks/expert/__items/expert__items.css);
-@import url(../blocks/expert/__item/expert__item.css);
 @import url(../blocks/expert/__item-header/expert__item-header.css);
 @import url(../blocks/expert/__item-text/expert__item-text.css);
+@import url(../blocks/expert/__item/expert__item.css);
+@import url(../blocks/expert/__items/expert__items.css);
+@import url(../blocks/expert/__title/expert__title.css);
 
 /* стили заголовков */
 @import url(../blocks/title/title.css);
@@ -120,3 +125,19 @@
 
 /* FOOTER */
 @import url(../blocks/footer/footer.css);
+@import url(../blocks/footer/__columns/footer__columns.css);
+@import url(../blocks/footer/__table/footer__table.css);
+@import url(../blocks/footer/__column-left/footer__column-left.css);
+@import url(../blocks/footer/__column-phone/_number/footer__column-phone_number.css);
+@import url(../blocks/footer/__column-phone/_caption/footer__column-phone_caption.css);
+@import url(../blocks/footer/__author/footer__author.css);
+@import url(../blocks/footer/__info/footer__info.css);
+@import url(../blocks/footer/__logo/footer__logo.css);
+@import url(../blocks/footer/__logo/_vk/footer__logo_vk.css);
+@import url(../blocks/footer/__logo/_tg/footer__logo_tg.css);
+@import url(../blocks/footer/__column-heading/footer__column-heading.css);
+@import url(../blocks/footer/__column-link/footer__column-link.css);
+@import url(../blocks/footer/__column-links/footer__column-links.css);
+@import url(../blocks/footer/__column-social/footer__column-social.css);
+@import url(../blocks/footer/_journal/footer_journal.css);
+@import url(../blocks/footer/__column-right/footer__column-right.css);
