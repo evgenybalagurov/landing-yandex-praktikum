@@ -129,6 +129,7 @@
 @import url(../blocks/gallery/__trigger/gallery__trigger.css);
 @import url(../blocks/gallery/__trigger/_direction/gallery__trigger_direction_left.css);
 @import url(../blocks/gallery/__trigger/_direction/gallery__trigger_direction_right.css);
+@import url(../blocks/gallery/__trigger/_disabled/gallery__trigger_disabled.css);
 
 /* стили faq */
 @import url(../blocks/faq/faq.css);

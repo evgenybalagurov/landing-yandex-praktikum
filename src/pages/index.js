@@ -12,11 +12,15 @@ import {
   advantageListSection,
   templateAdvantageSelector,
   templateVacancySelector,
-  advantageArray,
   faqArray,
-  advantageListSection,
   faqAccordion,
   faqList,
+  galleryMain,
+  galleryFilm,
+  gallerySlideAll,
+  gallerySlide,
+  triggerLeft,
+  triggerRight
 } from "../utils/constants.js";
 
 // advantages
@@ -119,4 +123,60 @@ const getFaq = (item) => {
   return faq.getFaqElement();
 };
 
-faqItems.renderItems(faqArray);
+
+faqItems.renderItems(faqArray)
+
+
+let slideIndex = 0;
+
+function render() {
+  const mainWidth = galleryMain.offsetWidth
+  galleryFilm.style.right = (mainWidth * slideIndex) + (slideIndex * 50) + 'px';
+}
+
+function changeSize(){
+  const mainWidth = galleryMain.offsetWidth;
+  galleryFilm.style.width = (gallerySlideAll.length - 1) * 50 + mainWidth * gallerySlideAll.length +'px';
+  gallerySlideAll.forEach(slide => slide.style.width = mainWidth + 'px')
+  render();
+}
+
+window.addEventListener('resize', changeSize);
+changeSize();
+
+function disableTrigger(boolean, trigger){
+  if(boolean){
+    trigger.classList.add('gallery__trigger_disabled');
+    trigger.setAttribute("disabled", '');
+  }else{
+    trigger.classList.remove('gallery__trigger_disabled');
+    trigger.disabled = false
+  }
+}
+
+triggerLeft.addEventListener('click', ()=>{
+	if (slideIndex > 0){
+		slideIndex--;
+    if(slideIndex === 0){
+      disableTrigger(true, triggerLeft)
+    }else{
+      disableTrigger(false, triggerRight)
+    }
+	}
+	render()
+});
+
+triggerRight.addEventListener('click', (evt)=>{
+  console.log(evt.target)
+	if (gallerySlideAll.length - 1 > slideIndex){
+		slideIndex++;
+    if(gallerySlideAll.length - 1 === slideIndex){
+      disableTrigger(true, triggerRight)
+    }else{
+      disableTrigger(false, triggerLeft)
+    }
+	}
+	render()
+});
+
+disableTrigger(true, triggerLeft);
