@@ -32,23 +32,25 @@
   </header>
   <main>
     <section class="start-screen">
-      <h1 class="start-screen__title">Ищем экспертов в&#160;Яндекс.Практикум</h1>
-      <p class="start-screen__subtitle">
-        Текст
-      </p>
-      <button class="button button_place_start-screen">Button</button>
+      <div class="start-screen__main-info">
+        <h1 class="start-screen__title">Ищем экспертов в&#160;команду</h1>
+        <p class="start-screen__subtitle">
+          Стань наставником или ревьюером Яндекс Практикума
+        </p>
+        <button class="button button_place_start-screen">Стать экспертом</button>
+      </div>
       <ul class="numbers">
         <li class="numbers__item">
           <h3 class="numbers__title">2-3</h3>
           <p class="numbers__subtitle">часа в день</p>
         </li>
         <li class="numbers__item">
-          <h3 class="numbers__title">35-55</h3>
-          <p class="numbers__subtitle">тысяч рублей</p>
+          <h3 class="numbers__title">43 000 руб</h3>
+          <p class="numbers__subtitle">среднее вознаграждение за месяц</p>
         </li>
         <li class="numbers__item">
-          <h3 class="numbers__title">~ 50</h3>
-          <p class="numbers__subtitle">человек в группе</p>
+          <h3 class="numbers__title">350+</h3>
+          <p class="numbers__subtitle">экспертов в команде</p>
         </li>
       </ul>
     </section>
@@ -121,6 +123,15 @@
     <section class="faq">
       <h2 class="title">Ответим на вопросы</h2>
       <ul class="faq__list"></ul>
+      <form class="form-tel" name="formCallRequest">
+        <div class="form-tel__text">
+          <h3 class="form-tel__title">Остались вопросы?</h3>
+          <p class="form-tel__subtitle">Перезвоним в рабочее время</p>
+        </div>
+        <input id="tel-input" class="form-tel__input" type="tel" name="tel" required placeholder="+7 (000) 000 00 00">
+        <!-- <span id="tel-input-error" class="form-tel__text-error"></span> -->
+        <input class="button button_place_form-tel" type="submit" value="Отправить">
+      </form>
     </section>
   </main>
 
