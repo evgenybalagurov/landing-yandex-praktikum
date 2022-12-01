@@ -13,6 +13,7 @@ import {
   templateVacancySelector,
 } from "../utils/constants.js";
 
+// advantages
 const advantagesList = new Section(
   {
     renderer: (item) => {
@@ -32,11 +33,34 @@ const getAdvantage = (item) => {
 
 advantagesList.renderItems(advantageArray);
 
+// vacancy
 const getVacancy = (item) => {
   const vacancy = new Vacancy(item, templateVacancySelector);
 
   return vacancy.getCardElement();
 };
+
+const rendererVacancy = (dataAttribute) => {
+  const vacancyList = new Section(
+    {
+      renderer: (item) => {
+        const vacancyElement = getVacancy(item);
+
+        vacancyList.setItem(vacancyElement);
+      },
+    },
+    `[data-content=${dataAttribute}]`
+  );
+  const cardsArray = vacancyArray.filter(
+    (item) => item.tabContent === dataAttribute
+  );
+
+  vacancyList.clearItems();
+  vacancyList.renderItems(cardsArray);
+}
+
+rendererVacancy("mentor-programming");
+rendererVacancy("reviewer-programming");
 
 new Tabs({
   tabsSelector: ".vacancy__tabs",
@@ -56,23 +80,7 @@ new Tabs(
     tabsCaptionActiveClass: "tabs__tab-button_active",
     tabsContentActiveClass: "tabs__content_active",
   },
-  (dataAttribute) => {
-    const vacancyList = new Section(
-      {
-        renderer: (item) => {
-          const vacancyElement = getVacancy(item);
-
-          vacancyList.setItem(vacancyElement);
-        },
-      },
-      `[data-content=${dataAttribute}]`
-    );
-    const tabsArray = vacancyArray.filter(
-      (item) => item.tabContent === dataAttribute
-    );
-
-    vacancyList.renderItems(tabsArray);
-  }
+  (data) => rendererVacancy(data),
 ).init();
 
 new Tabs(
@@ -84,7 +92,5 @@ new Tabs(
     tabsCaptionActiveClass: "tabs__tab-button_active",
     tabsContentActiveClass: "tabs__content_active",
   },
-  (item) => {
-    console.log(item);
-  }
+  (data) => rendererVacancy(data),
 ).init();

@@ -7,7 +7,7 @@ const vacancyArray = [
     price: "35 000 руб",
   },
   {
-    tabContent: "mentor-programming",
+    tabContent: "reviewer-programming",
     title: "Мидл<br/> фронтенд-разработчик",
     price: "35 000 руб",
   },

@@ -26,6 +26,7 @@
 @import url(../blocks/button/button.css);
 @import url(../blocks/button/_place/button_place_start-screen.css);
 @import url(../blocks/button/_place/button_place_vacancy-card.css);
+@import url(../blocks/button/_place/button_place_vacancy-tabs.css);
 
 /* стили заголовков */
 @import url(../blocks/title/title.css);

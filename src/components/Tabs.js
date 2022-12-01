@@ -1,67 +1,68 @@
 class Tabs {
   constructor(config, rendererContent) {
-    this.tabs = config.tabsSelector;
-    this.head = config.tabsHeadSelector;
-    this.body = config.tabsBodySelector;
-    this.caption = config.tabsCaptionSelector;
-    this.captionActiveClass = config.tabsCaptionActiveClass;
-    this.contentActiveClass = config.tabsContentActiveClass;
-    this.rendererContent = rendererContent;
+    this._tabs = config.tabsSelector;
+    this._head = config.tabsHeadSelector;
+    this._body = config.tabsBodySelector;
+    this._caption = config.tabsCaptionSelector;
+    this._captionActiveClass = config.tabsCaptionActiveClass;
+    this._contentActiveClass = config.tabsContentActiveClass;
+    this._rendererContent = rendererContent;
   }
 
-  getActiveTabName(head) {
-    return head.querySelector(`.${this.captionActiveClass}`).dataset.tab;
+  _getActiveTabName(head) {
+    return head.querySelector(`.${this._captionActiveClass}`).dataset.tab;
   }
 
-  setActiveContent(head, body) {
-    if (body.querySelector(`.${this.contentActiveClass}`)) {
+  _setActiveContent(head, body) {
+    if (body.querySelector(`.${this._contentActiveClass}`)) {
       body
-        .querySelector(`.${this.contentActiveClass}`)
-        .classList.remove(this.contentActiveClass);
+        .querySelector(`.${this._contentActiveClass}`)
+        .classList.remove(this._contentActiveClass);
     }
+
     body
-      .querySelector(`[data-tab=${this.getActiveTabName(head)}]`)
-      .classList.add(this.contentActiveClass);
+      .querySelector(`[data-tab=${this._getActiveTabName(head)}]`)
+      .classList.add(this._contentActiveClass);
   }
 
-  onLoad(head, body) {
-    if (!head.querySelector(`.${this.captionActiveClass}`)) {
-      head.querySelector(this.caption).classList.add(this.captionActiveClass);
+  _onLoad(head, body) {
+    if (!head.querySelector(`.${this._captionActiveClass}`)) {
+      head.querySelector(this._caption).classList.add(this._captionActiveClass);
     }
 
-    this.setActiveContent(head, body);
+    this._setActiveContent(head, body);
   }
 
-  onClick(head, body) {
+  _onClick(head, body) {
     head.addEventListener("click", (e) => {
-      const caption = e.target.closest(this.caption);
+      const caption = e.target.closest(this._caption);
       if (!caption) return;
-      if (caption.classList.contains(this.captionActiveClass)) return;
+      if (caption.classList.contains(this._captionActiveClass)) return;
 
-      if (head.querySelector(`.${this.captionActiveClass}`)) {
+      if (head.querySelector(`.${this._captionActiveClass}`)) {
         head
-          .querySelector(`.${this.captionActiveClass}`)
-          .classList.remove(this.captionActiveClass);
+          .querySelector(`.${this._captionActiveClass}`)
+          .classList.remove(this._captionActiveClass);
       }
 
-      caption.classList.add(this.captionActiveClass);
+      caption.classList.add(this._captionActiveClass);
 
-      this.setActiveContent(head, body);
+      this._setActiveContent(head, body);
 
-      if (this.rendererContent) {
-        this.rendererContent(this.getActiveTabName(head));
+      if (this._rendererContent) {
+        this._rendererContent(this._getActiveTabName(head));
       }
     });
   }
 
   init() {
-    const tabs = document.querySelector(this.tabs);
-    const head = tabs.querySelector(this.head);
-    const body = tabs.querySelector(this.body);
+    const tabs = document.querySelector(this._tabs);
+    const head = tabs.querySelector(this._head);
+    const body = tabs.querySelector(this._body);
 
-    this.onLoad(head, body);
+    this._onLoad(head, body);
 
-    this.onClick(head, body);
+    this._onClick(head, body);
   }
 }
 
