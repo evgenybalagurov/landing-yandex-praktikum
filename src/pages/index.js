@@ -4,6 +4,7 @@ import Advantage from "../components/Advantage.js";
 import Vacancy from "../components/Vacancy";
 import Section from "../components/Section.js";
 import Tabs from "../components/Tabs.js";
+import Faq from "../components/Faq.js";
 
 import {
   advantageArray,
@@ -11,6 +12,11 @@ import {
   advantageListSection,
   templateAdvantageSelector,
   templateVacancySelector,
+  advantageArray,
+  faqArray,
+  advantageListSection,
+  faqAccordion,
+  faqList,
 } from "../utils/constants.js";
 
 // advantages
@@ -57,7 +63,7 @@ const rendererVacancy = (dataAttribute) => {
 
   vacancyList.clearItems();
   vacancyList.renderItems(cardsArray);
-}
+};
 
 rendererVacancy("mentor-programming");
 rendererVacancy("reviewer-programming");
@@ -80,7 +86,7 @@ new Tabs(
     tabsCaptionActiveClass: "tabs__tab-button_active",
     tabsContentActiveClass: "tabs__content_active",
   },
-  (data) => rendererVacancy(data),
+  (data) => rendererVacancy(data)
 ).init();
 
 new Tabs(
@@ -92,5 +98,25 @@ new Tabs(
     tabsCaptionActiveClass: "tabs__tab-button_active",
     tabsContentActiveClass: "tabs__content_active",
   },
-  (data) => rendererVacancy(data),
+  (data) => rendererVacancy(data)
 ).init();
+
+// faq
+const faqItems = new Section(
+  {
+    renderer: (item) => {
+      const faqElement = getFaq(item);
+
+      faqItems.setItem(faqElement);
+    },
+  },
+  faqList
+);
+
+const getFaq = (item) => {
+  const faq = new Faq(item);
+
+  return faq.getFaqElement();
+};
+
+faqItems.renderItems(faqArray);
