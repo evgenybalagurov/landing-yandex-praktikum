@@ -43,20 +43,37 @@ const faqArray = [
     panelText:
       "Школа наставников — это двухнедельный интенсив по коммуникации и управлению командой для IT-специалистов. Вы узнаете, как передавать знания и опыт начинающим аналитикам и создавать условия для развития самостоятельности своих подопечных. Вас ждёт пять вебинаров в вечернее время продолжительностью 2,5 часа и небольшие домашние задания, рассчитанные на 30-60 минут.",
   },
+  {
+    accordionText:
+      "Я подхожу. Что вы можете мне предложить?",
+    panelText:
+      "Новый опыт, который сложно получить на обычной работе. Возможность поучаствовать в профессиональном образовательном проекте для опытных разработчиков. Площадку для передачи знаний и навыков другим разработчикам. Работу из любой точки земного шара. Возможность совмещать участие в проекте с основной работой. Обмен опытом с нашей командой разработчиков, авторов, редакторов и методистов.",
+  },
 ];
 
 const advantageListSection = ".advantages__items";
 const templateAdvantageSelector = ".template-advantage";
 
-const faq = document.querySelector(".faq");
-const faqAccordion = faq.querySelectorAll(".faq__accordion");
 const faqList = ".faq__list";
+
+const gallery = document.querySelector('#galleryFeedback')
+const galleryMain = gallery.querySelector('.gallery__main');
+const galleryFilm = gallery.querySelector('.gallery__film');
+const gallerySlideAll = galleryFilm.querySelectorAll('.gallery__slide');
+const gallerySlide = gallery.querySelector('.gallery__slide');
+const triggerLeft = gallery.querySelector('.gallery__trigger_direction_left');
+const triggerRight = gallery.querySelector('.gallery__trigger_direction_right');
 
 export {
   advantageArray,
   faqArray,
   advantageListSection,
   templateAdvantageSelector,
-  faqAccordion,
   faqList,
+  galleryMain,
+  galleryFilm,
+  gallerySlideAll,
+  gallerySlide,
+  triggerLeft,
+  triggerRight
 };
