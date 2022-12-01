@@ -3,6 +3,45 @@ import advantagesIcon2 from "../images/advantages/advantages_icon_2.svg";
 import advantagesIcon3 from "../images/advantages/advantages_icon_3.svg";
 import advantagesIcon4 from "../images/advantages/advantages_icon_4.svg";
 
+const vacancyArray = [
+  {
+    tabContent: "mentor-programming",
+    title: `Мидл
+      фронтенд-разработчик`,
+    price: "35 000 руб",
+  },
+  {
+    tabContent: "reviewer-programming",
+    title: `Мидл
+      фронтенд-разработчик`,
+    price: "35 000 руб",
+  },
+  {
+    tabContent: "reviewer-marketing",
+    title: `Мидл
+      фронтенд-разработчик`,
+    price: "35 000 руб",
+  },
+  {
+    tabContent: "mentor-programming",
+    title: `Мидл
+      фронтенд-разработчик`,
+    price: "35 000 руб",
+  },
+  {
+    tabContent: "mentor-programming",
+    title: `Мидл
+      фронтенд-разработчик`,
+    price: "35 000 руб",
+  },
+  {
+    tabContent: "reviewer-marketing",
+    title: `Мидл
+      фронтенд-разработчик`,
+    price: "40 000 руб",
+  },
+];
+
 const advantageArray = [
   {
     icon: advantagesIcon1,
@@ -53,6 +92,9 @@ const faqArray = [
 
 const advantageListSection = ".advantages__items";
 const templateAdvantageSelector = ".template-advantage";
+const templateVacancySelector = ".template-vacancy";
+const faq = document.querySelector(".faq");
+const faqAccordion = faq.querySelectorAll(".faq__accordion");
 
 const faqList = ".faq__list";
 
@@ -65,10 +107,13 @@ const triggerLeft = gallery.querySelector('.gallery__trigger_direction_left');
 const triggerRight = gallery.querySelector('.gallery__trigger_direction_right');
 
 export {
+  vacancyArray,
   advantageArray,
   faqArray,
   advantageListSection,
   templateAdvantageSelector,
+  templateVacancySelector,
+  faqAccordion,
   faqList,
   galleryMain,
   galleryFilm,
